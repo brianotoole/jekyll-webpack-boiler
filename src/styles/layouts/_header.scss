@@ -9,7 +9,7 @@
   max-width: 100%;
   height: auto;
   margin: 0;
-  padding: 30px;
+  padding: 45px 30px;
   background-color: black;
   z-index: 300;
   transform: translateY(0);
@@ -43,10 +43,10 @@
     flex: 0 0 auto;
   }
   a {
-    margin: 0 calc-em(15px);
-    padding-bottom: calc-em(5px);
+    margin: 0 20px;
+    padding-bottom: 5px;
     color: $color-white;
-    font-size: calc-em(18px);
+    font-size: rem(18);
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
@@ -67,6 +67,7 @@
     }
     &:hover {
       text-decoration: none;
+      color: $color-white;
     }
     &:hover:before{
       left: 0;
@@ -96,7 +97,7 @@
   margin: 0;
   padding: 0;
   padding-top: 100px; //make "x" clickable at top of nav
-  font-size: calc-em(18px);
+  font-size: rem(18);
   text-transform: uppercase;
   overflow: hidden;
   transform: translateY(-100%);
@@ -159,7 +160,7 @@ $translateX: 0;
   position: absolute;
   margin: 0;
   right: 0;
-  margin-right: 15px;
+  margin-right: 45px;
   cursor: pointer;
   z-index: 99999;
   .line {
