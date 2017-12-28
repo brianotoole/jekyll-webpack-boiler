@@ -1,0 +1,40 @@
+// VARIABLES
+
+// Colors: branding
+$color-primary: #0f2805;
+$color-secondary:  #fff8e8;
+
+// Colors: others
+$color-body: #474646; 
+$color-white: #fff; 
+$color-gray: #f5f5f5;
+$color-black: #000;
+
+// Colors: components
+$color-link: darken($color-primary, 5%);
+$color-link-hover: darken($color-primary, 15%);
+
+// Font Stacks
+$font-heading: 'arno-pro', serif; //loaded via adobe typekit in header
+$font-body: 'luxi-sans', sans-serif; //loaded via adobe typekit in header
+$font-monospace: Menlo, Monaco, monospace;
+
+// Breakpoints, using rems
+// #size % 16(default body font-size) == xrem (or, 320%16 ==20)
+$bp-xs: 20rem; //320
+$bp-sm: 30rem; //480
+$bp-md: 50rem; //800
+$bp-lg: 62.4375em; //999
+$bp-xl: 80rem; //1280
+
+// Sizings
+$font-size-body: rem(16);
+// Relative sizings if needed to resize body
+$font-size-xl: 120%;
+$font-size-lg: 110%;
+$font-size-sm: 90%;
+$font-size-xs: 80%;
+
+// Margins & Pads
+$margin-bottom-headings: 0.5rem;
+$margin-bottom-paragraphs: 1rem;

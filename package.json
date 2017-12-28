@@ -1,0 +1,49 @@
+{
+  "name": "webpack-jekyll",
+  "version": "1.0.0",
+  "description": "webpack jekyll",
+  "main": "webpack.dev.js",
+  "browserslist": [
+    "> 1%",
+    "ie >= 10"
+  ],
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "start": "webpack --watch --config webpack.dev.js",
+    "jekyll": "jekyll s --source=jekyll --destination dist",
+    "jekyll-prod": "JEKYLL_ENV=production jekyll build --source=jekyll --destination dist",
+    "webpack-prod": "NODE_ENV=production webpack --config webpack.prod.js",
+    "prod": "npm run webpack-prod && npm run jekyll-prod && http-server ./dist"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "autoprefixer": "^7.1.5",
+    "babel-loader": "^8.0.0-beta.0",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.8",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dashboard": "^1.0.0",
+    "webpack-dev-server": "^2.9.5",
+    "webpack-merge": "^4.1.0",
+    "webpack-notifier": "^1.5.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
