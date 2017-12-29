@@ -1236,6 +1236,21 @@ body.nav-open {
   padding-top: 60px;
   padding-bottom: 60px; }
 
+.page-home .section-header {
+  position: relative; }
+  .page-home .section-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("/assets/images/home-bg.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 377px 700px;
+    width: 377px;
+    height: 700px;
+    z-index: 3; }
+
 .text-white {
   color: #fff; }
 
